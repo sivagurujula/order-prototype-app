@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64bc9a088fe085a638a3d58132c430ec",
+    "revision": "f618514d72e7eff5074c96e2ab08bb85",
     "url": "/order-prototype-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/order-prototype-app/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "82b1a6272be74e70a57f",
+    "revision": "590fb2b7c697043fa837",
     "url": "/order-prototype-app/static/css/main.dc764a7e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/order-prototype-app/static/js/2.b4943a3d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82b1a6272be74e70a57f",
-    "url": "/order-prototype-app/static/js/main.6dc22cc1.chunk.js"
+    "revision": "590fb2b7c697043fa837",
+    "url": "/order-prototype-app/static/js/main.e484396c.chunk.js"
   },
   {
     "revision": "bfec578a03c6a1298ac2",
