@@ -1,0 +1,72 @@
+{
+    "id": "99",
+ "href": "https://host:port/appointment/searchTimeSlot/99",
+    "status": "created",
+    "searchDate": "2020-07-13T14:40:43.071Z",
+    "searchResult": "success",
+    "RelatedPlace": {
+        "id": "888",
+        "href": "https://host:port/addressManagement/geographicAddress /888",
+        "name": "Main Home",
+        "role": "interventionAddress",
+        "@referredType": "GeographicAddress"
+    },
+    "requestedTimeSlot": [
+        {
+            "validFor": {
+                "startDateTime": "2020-07-13T00:00:00.000Z",
+                "endDateTime": "2020-07-21T00:00:00.000Z"
+            }
+        }
+    ],
+    "relatedEntity": [
+        {
+            "id": "789",
+            "href": "https://host:port/troubleTicket/troubleTicket/789",
+            "name": "Full Fiber installation",
+            "role": "Problem description",
+            "@referredType": "InstallationTicket"
+        }
+    ],
+    "availableTimeSlot": [
+        {
+            "validFor": {
+                "startDateTime": "2020-07-15T14:00:00.000Z",
+                "endDateTime": "2020-07-15T16:00:00.000Z"
+            },
+            "relatedParty": {
+                "id": "56",
+                "href": "https://host:port/partyManagement/individual/56",
+                "name": "John Doe",
+                "role": "technician",
+                "@referredType": "Individual"
+            }
+        },
+        {
+            "validFor": {
+                "startDateTime": "2020-07-16T16:30:00.000Z",
+                "endDateTime": "2020-07-16T18:00:00.000Z"
+            },
+            "relatedParty": {
+                "id": "56",
+                "href": "https://host:port/partyManagement/individual/56",
+                "name": "John Doe",
+                "role": "technician",
+                "@referredType": "Individual"
+            }
+        },
+        {
+            "validFor": {
+                "startDateTime": "2020-07-15T16:00:00.000Z",
+                "endDateTime": "2020-07-15T17:00:00.000Z"
+            },
+            "relatedParty": {
+                "id": "58",
+                "href": "https://host:port/partyManagement/individual/58",
+                "name": "Adam Smith",
+                "role": "technician",
+                "@referredType": "Individual"
+            }
+        }
+    ]
+}

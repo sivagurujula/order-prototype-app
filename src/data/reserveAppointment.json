@@ -1,0 +1,79 @@
+{
+ "id": "21",
+ "href": "https://host:port/appointment/appointment/21",
+ "externalId": "432113",
+ "category": "intervention",
+ "description": "Fix an internet connexion problem for a customer",
+ "status": "accepted",
+ "creationDate": "2018-02-01T14:40:43.071Z",
+ "lastUpdate": "2018-02-04T14:40:43.071Z",
+ "validFor": {
+ "startDateTime": "2018-02-15T14:00:00.071Z",
+ "endDateTime": "2018-02-15T16:00:00.071Z"
+ },
+ "attachment": [
+ {
+ "id": "4444",
+ "href": "https://host:port/documentManagement/customerContract/4444",
+ "isRef": true,
+ "@referredType": "CustomerContract",
+ "@baseType": "Attachment"
+ }
+ ],
+ "calendarEvent": {
+ "id": "33",
+ "href": " https://host:port/timeManagement/calendarEvent/33",
+ "name": "Outlook calendar event"
+ },
+ "relatedParty": [
+ {
+ "id": "32",
+ "href": "https://host:port/partyManagement/individual/32",
+ "name": "Kate Smith",
+ "role": "customer",
+ "@referredType": "Individual"
+ },
+ {
+ "id": "56",
+ "href": "https://host:port/partyManagement/individual/56",
+ "name": "John Doe",
+ "role": "technician",
+ "@referredType": "Individual"
+ }
+ ],
+ "RelatedPlace": {
+ "id": "888",
+ "href": "https://host:port/addressManagement /geographicAddress /888",
+ "name": "Main Home",
+ "role": "interventionAddress",
+ "@referredType": "GeographicAddress"
+ },
+ "relatedEntity": [
+ {
+ "id": "789",
+ "href": "https://host:port/troubleTicket/troubleTicket/789",
+ "role": "Problem description",
+ "name": "Internet connexion problem to solve",
+ "@referredType": "TroubleTicket"
+ },
+ {
+ "id": "465",
+ "href": "https://host:port/workForceManagement/workOrder/465",
+ "role": "work order description",
+ "name": "Work order generated for technician intervention",
+ "@referredType": "WorkOrder"
+ }
+ ],
+ "note": [
+ {
+ "date": "2018-02-04T11:00:18.071Z",
+ "author": "Ludovic Robert",
+ "text": "Problem explained to the technician"
+ },
+ {
+ "date": "2018-02-04T14:40:43.071Z",
+ "author": "Ludovic Robert",
+ "text": "Work order generated"
+ }
+ ]
+}

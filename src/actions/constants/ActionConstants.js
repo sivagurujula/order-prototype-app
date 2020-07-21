@@ -1,0 +1,6 @@
+export const GET_APPOINTMENTS_REQUEST = "getAppointmentsRequest"
+export const GET_APPOINTMENTS_SUCESS = "getAppointmentsSucess"
+export const GET_APPOINTMENTS_FAILURE = "getAppointmentsFailure"
+export const RESERVE_APPOINTMENT_REQUEST = "reserveAppointmentRequest"
+export const RESERVE_APPOINTMENT_SUCESS = "reserveAppointmentSucess"
+export const RESERVE_APPOINTMENT_FAILURE = "reserveAppointmentFailure"

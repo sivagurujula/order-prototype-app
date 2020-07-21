@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "slot":"Mon 20 Jul 8am - 1pm"
+    },
+    {
+        "id":2,
+        "slot":"Mon 21 Jul 8am - 1pm"
+    },
+    {
+        "id":3,
+        "slot":"Mon 22 Jul 8am - 1pm"
+    },
+    {
+        "id":4,
+        "slot":"Mon 23 Jul 8am - 1pm"
+    },
+    {
+        "id":5,
+        "slot":"Mon 24 Jul 8am - 1pm"
+    },
+    {
+        "id":6,
+        "slot":"Mon 20 Jul 1pm - 6pm"
+    },
+    {
+        "id":7,
+        "slot":"Mon 21 Jul 1pm - 6pm"
+    },
+    {
+        "id":8,
+        "slot":"Mon 22 Jul 1pm - 6pm"
+    },
+    {
+        "id":9,
+        "slot":"Mon 23 Jul 1pm - 6pm"
+    },
+    {
+        "id":10,
+        "slot":"Mon 24 Jul 1pm - 6pm"
+    }
+]

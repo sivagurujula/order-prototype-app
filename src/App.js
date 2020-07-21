@@ -1,25 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import {BrowserRouter as Router , Route,  Switch } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar'
+// import AppointmentsContainer from './containers/AppointmentsContainer';
+// import Products from '../src/components/Products'
+// import HorizontalLinearStepper from './components/ProgressSteps';
+import Checkout from './components/Checkout';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+function App(props) {
+  
+   return (
+      <React.Fragment>
+         <Navbar expand="lg" bg="primary" variant="dark">
+           
+    <Navbar.Brand href="#home">
+      <img
+        alt=""
+        src="/logo.svg"
+        width="30"
+        height="30"
+        className="d-inline-block align-top"
+      />{' '}
+      BT
+    </Navbar.Brand>
+  </Navbar>
+  
+  <div className="container">
+    <br></br>
+  
+  {/* <HorizontalLinearStepper /> */}
+  <Checkout />
+  {/* <Router>
+     
+      <Switch>
+        <Route  path="/reserve" component={AppointmentsContainer} />        
+        <Route exact path="/home" component={Products} />
+        <Route exact path="/" component={Checkout} />        
+      </Switch>      
+    </Router> */}
+  
+            </div>
+        
+      </React.Fragment>
+      
   );
 }
 
