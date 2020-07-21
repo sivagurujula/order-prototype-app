@@ -103,10 +103,10 @@ class Appointment extends Component {
             return ({id:index+1,slot:this.formatDateTimeSlot(data),validFor:data})
         })
         console.log('appointmentsJSON: ',appointments)
-        const defaultSlot = appointments[1].slot;        
+        const defaultSlot = appointments[0];        
         
-        this.setState({...this.state,appointmentsFromAPI: appointments,defaultSlot,selectedAppointment:appointments[1]});
-        this.props.reserveAppointment(appointments[1]);
+        this.setState({...this.state,appointmentsFromAPI: appointments,defaultSlot:defaultSlot.slot,selectedAppointment:defaultSlot});
+        this.props.reserveAppointment(defaultSlot);
         return appointments;
     }
     componentDidMount(){
