@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f618514d72e7eff5074c96e2ab08bb85",
+    "revision": "77598d059004cdee5fea62bcae62427f",
     "url": "/order-prototype-app/index.html"
   },
   {
-    "revision": "7397c0308bd52c4d55be",
+    "revision": "ec8bcc9f530b28cd4cf4",
     "url": "/order-prototype-app/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "590fb2b7c697043fa837",
+    "revision": "73168a388bdb3f1dce43",
     "url": "/order-prototype-app/static/css/main.dc764a7e.chunk.css"
   },
   {
-    "revision": "7397c0308bd52c4d55be",
-    "url": "/order-prototype-app/static/js/2.b4943a3d.chunk.js"
+    "revision": "ec8bcc9f530b28cd4cf4",
+    "url": "/order-prototype-app/static/js/2.b626a74b.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/order-prototype-app/static/js/2.b4943a3d.chunk.js.LICENSE.txt"
+    "url": "/order-prototype-app/static/js/2.b626a74b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "590fb2b7c697043fa837",
-    "url": "/order-prototype-app/static/js/main.e484396c.chunk.js"
+    "revision": "73168a388bdb3f1dce43",
+    "url": "/order-prototype-app/static/js/main.f35d8859.chunk.js"
   },
   {
     "revision": "bfec578a03c6a1298ac2",
