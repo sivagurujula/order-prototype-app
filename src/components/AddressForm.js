@@ -6,7 +6,10 @@ import TextField from '@material-ui/core/TextField';
 
 
 export default function AddressForm() {
-  
+  var d = new Date();
+
+d.setDate(d.getDate() + (7-d.getDay())%7+1);
+console.log(d);
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>

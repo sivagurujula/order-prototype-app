@@ -2,7 +2,7 @@
     "id": "99",
  "href": "https://host:port/appointment/searchTimeSlot/99",
     "status": "created",
-    "searchDate": "2020-07-13T14:40:43.071Z",
+    "searchDate": "2020-08-13T14:40:43.081Z",
     "searchResult": "success",
     "RelatedPlace": {
         "id": "888",
@@ -14,8 +14,8 @@
     "requestedTimeSlot": [
         {
             "validFor": {
-                "startDateTime": "2020-07-13T00:00:00.000Z",
-                "endDateTime": "2020-07-21T00:00:00.000Z"
+                "startDateTime": "2020-08-13T00:00:00.000Z",
+                "endDateTime": "2020-08-21T00:00:00.000Z"
             }
         }
     ],
@@ -31,8 +31,8 @@
     "availableTimeSlot": [
         {
             "validFor": {
-                "startDateTime": "2020-07-30T14:00:00.000Z",
-                "endDateTime": "2020-07-30T16:00:00.000Z"
+                "startDateTime": "2020-08-03T08:00:00.000Z",
+                "endDateTime": "2020-08-03T13:00:00.000Z"
             },
             "relatedParty": {
                 "id": "56",
@@ -44,8 +44,8 @@
         },
         {
             "validFor": {
-                "startDateTime": "2020-07-31T16:30:00.000Z",
-                "endDateTime": "2020-07-31T18:00:00.000Z"
+                "startDateTime": "2020-08-04T08:00:00.000Z",
+                "endDateTime": "2020-08-04T13:00:00.000Z"
             },
             "relatedParty": {
                 "id": "56",
@@ -57,8 +57,99 @@
         },
         {
             "validFor": {
-                "startDateTime": "2020-08-03T16:00:00.000Z",
-                "endDateTime": "2020-08-03T17:00:00.000Z"
+                "startDateTime": "2020-08-05T08:00:00.000Z",
+                "endDateTime": "2020-08-05T13:00:00.000Z"
+            },
+            "relatedParty": {
+                "id": "58",
+                "href": "https://host:port/partyManagement/individual/58",
+                "name": "Adam Smith",
+                "role": "technician",
+                "@referredType": "Individual"
+            }
+        },
+		{
+            "validFor": {
+                "startDateTime": "2020-08-06T08:00:00.000Z",
+                "endDateTime": "2020-08-06T13:00:00.000Z"
+            },
+            "relatedParty": {
+                "id": "58",
+                "href": "https://host:port/partyManagement/individual/58",
+                "name": "Adam Smith",
+                "role": "technician",
+                "@referredType": "Individual"
+            }
+        },
+		{
+            "validFor": {
+                "startDateTime": "2020-08-07T08:00:00.000Z",
+                "endDateTime": "2020-08-07T13:00:00.000Z"
+            },
+            "relatedParty": {
+                "id": "58",
+                "href": "https://host:port/partyManagement/individual/58",
+                "name": "Adam Smith",
+                "role": "technician",
+                "@referredType": "Individual"
+            }
+        },
+		{
+            "validFor": {
+                "startDateTime": "2020-08-03T13:00:00.000Z",
+                "endDateTime": "2020-08-03T18:00:00.000Z"
+            },
+            "relatedParty": {
+                "id": "56",
+                "href": "https://host:port/partyManagement/individual/56",
+                "name": "John Doe",
+                "role": "technician",
+                "@referredType": "Individual"
+            }
+        },
+        {
+            "validFor": {
+                "startDateTime": "2020-08-04T13:00:00.000Z",
+                "endDateTime": "2020-08-04T18:00:00.000Z"
+            },
+            "relatedParty": {
+                "id": "56",
+                "href": "https://host:port/partyManagement/individual/56",
+                "name": "John Doe",
+                "role": "technician",
+                "@referredType": "Individual"
+            }
+        },
+        {
+            "validFor": {
+                "startDateTime": "2020-08-05T13:00:00.000Z",
+                "endDateTime": "2020-08-05T18:00:00.000Z"
+            },
+            "relatedParty": {
+                "id": "58",
+                "href": "https://host:port/partyManagement/individual/58",
+                "name": "Adam Smith",
+                "role": "technician",
+                "@referredType": "Individual"
+            }
+        },
+		{
+            "validFor": {
+                "startDateTime": "2020-08-06T13:00:00.000Z",
+                "endDateTime": "2020-08-06T18:00:00.000Z"
+            },
+            "relatedParty": {
+                "id": "58",
+                "href": "https://host:port/partyManagement/individual/58",
+                "name": "Adam Smith",
+                "role": "technician",
+                "@referredType": "Individual"
+            }
+        },
+		{
+            "validFor": {
+                "startDateTime": "2020-08-07T13:00:00.000Z",
+                "endDateTime": "2020-08-07T18:00:00.000Z"
             },
             "relatedParty": {
                 "id": "58",

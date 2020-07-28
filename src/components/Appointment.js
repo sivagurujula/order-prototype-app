@@ -8,6 +8,7 @@ import { Badge, Image, ButtonToolbar } from 'react-bootstrap';
 
 import appMsg from '../appointmentMsg.jpg'
 
+
 class Appointment extends Component {
     constructor(props) {
         super(props);
@@ -43,9 +44,11 @@ class Appointment extends Component {
                 return (
 
                     <ToggleButton variant={selectedAppId === data.id ? "success" : "light"} key={data.id} value={data.id}
-                        className="rounded mb-0 mr-2 block-example border border-dark"
-                        onClick={() => this.reserveSlot(data)}>
-                        {data.slot}</ToggleButton>
+                        className="rounded mb-0 mr-1 block-example border border-dark"
+                        onClick={() => this.reserveSlot(data)}> 
+                        {data.slot}
+                        
+                    </ToggleButton>
 
                 )
             });
@@ -88,7 +91,36 @@ class Appointment extends Component {
         const monthStr = startDate.toLocaleDateString({},month);
         let convertedStr =  weekDayStr+ ' ' + startDate.getDate()+ 
                             ' '+monthStr + ' ' +
-                            ' '+ startHours +' - '+endHours;
+                            ' '+ startHours.toLocaleLowerCase().replace(/\s/g, '') +' - '+endHours.toLocaleLowerCase().replace(/\s/g, '');
+        return convertedStr;
+    }
+    formatWeekSlot = (validFor) =>{
+        //const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+       // const month = ['Jan','Feb','Mar','Apr','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        let startDate = new Date(validFor.startDateTime);
+        //let endDate = new Date(validFor.endDateTime);
+        
+        const weekDay = {weekday: 'short'};
+        const month = {month: 'short'};
+        
+        const weekDayStr = startDate.toLocaleDateString({},weekDay);
+        const monthStr = startDate.toLocaleDateString({},month);
+        let convertedStr =  weekDayStr+ ' ' + startDate.getDate()+ 
+                            ' '+monthStr ;
+        return convertedStr;
+    }
+    formatTimeSlot = (validFor) =>{
+        //const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+       // const month = ['Jan','Feb','Mar','Apr','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        let startDate = new Date(validFor.startDateTime);
+        //let endDate = new Date(validFor.endDateTime);
+        const timeString12hr =     {timeZone:'UTC',hour12:true,hour:'numeric'};
+        
+        const startHours = startDate.toLocaleTimeString({},timeString12hr);
+        const endHours = new Date(validFor.endDateTime)
+                            .toLocaleTimeString({},timeString12hr);
+       
+        let convertedStr =  startHours +' - '+endHours;
         return convertedStr;
     }
     getList = (list) => {
@@ -100,7 +132,7 @@ class Appointment extends Component {
         console.log('getList:: loading...',this.props.isLoading)
         const appointments = (list === undefined) ? []:list.map( (data,index) => {
             
-            return ({id:index+1,slot:this.formatDateTimeSlot(data),validFor:data})
+            return ({id:index+1,slot:this.formatDateTimeSlot(data),weekMonth:this.formatWeekSlot(data),timeSlot:this.formatTimeSlot(data),validFor:data})
         })
         console.log('appointmentsJSON: ',appointments)
         const defaultSlot = appointments[0];        
