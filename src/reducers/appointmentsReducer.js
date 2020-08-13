@@ -1,7 +1,9 @@
 import * as actions from '../actions/constants/ActionConstants'
 const initState = {
     isLoading : false,
-    appointments : []
+    appointments : [],
+    addresses: [],
+    postCode : null
 }
 
 const appointmentsReducer = (state = initState,action) =>{

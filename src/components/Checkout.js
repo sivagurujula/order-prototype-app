@@ -11,9 +11,10 @@ import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 // import Products from './Products';
+import AddressFormContainer from '../containers/AdressFromContainer';
 import AppointmentsContainer from '../containers/AppointmentsContainer';
 import PaymentForm from './PaymentForm';
-import AddressForm from './AddressForm';
+
 import Review from './Review';
 
 function Copyright() {
@@ -71,7 +72,7 @@ const steps = ['Personal Details','Appointment', 'Payment details', 'Review your
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <AddressForm />;
+      return <AddressFormContainer />;
     case 1:
       return <AppointmentsContainer />;
     case 2:
